@@ -11,6 +11,8 @@
 		606786ED2750316500081E1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606786EC2750316500081E1B /* ContentView.swift */; };
 		606786EF2750316600081E1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606786EE2750316600081E1B /* Assets.xcassets */; };
 		606786F22750316700081E1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606786F12750316700081E1B /* Preview Assets.xcassets */; };
+		606786F9275034D900081E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606786F8275034D900081E1B /* LaunchScreen.storyboard */; };
+		606786FC2750388400081E1B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606786FB2750388400081E1B /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		606786EC2750316500081E1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		606786EE2750316600081E1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		606786F12750316700081E1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		606786F8275034D900081E1B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		606786FA2750370900081E1B /* Learn-By-Doing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Learn-By-Doing-Info.plist"; sourceTree = SOURCE_ROOT; };
+		606786FB2750388400081E1B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +56,13 @@
 		606786E92750316500081E1B /* Learn By Doing */ = {
 			isa = PBXGroup;
 			children = (
+				606786FA2750370900081E1B /* Learn-By-Doing-Info.plist */,
 				606786EA2750316500081E1B /* Learn_By_DoingApp.swift */,
 				606786EC2750316500081E1B /* ContentView.swift */,
 				606786EE2750316600081E1B /* Assets.xcassets */,
 				606786F02750316700081E1B /* Preview Content */,
+				606786F8275034D900081E1B /* LaunchScreen.storyboard */,
+				606786FB2750388400081E1B /* CardView.swift */,
 			);
 			path = "Learn By Doing";
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				606786F9275034D900081E1B /* LaunchScreen.storyboard in Resources */,
 				606786F22750316700081E1B /* Preview Assets.xcassets in Resources */,
 				606786EF2750316600081E1B /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				606786ED2750316500081E1B /* ContentView.swift in Sources */,
+				606786FC2750388400081E1B /* CardView.swift in Sources */,
 				606786EB2750316500081E1B /* Learn_By_DoingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,9 +282,9 @@
 				DEVELOPMENT_TEAM = 7VL5533SK6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Learn-By-Doing-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,9 +311,9 @@
 				DEVELOPMENT_TEAM = 7VL5533SK6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Learn-By-Doing-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
