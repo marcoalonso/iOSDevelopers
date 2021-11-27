@@ -9,6 +9,10 @@ import SwiftUI
 
 struct CardView: View {
     // MARK: - Properties
+    @State private var fadeIn: Bool = false
+    @State private var moveDownward: Bool = false
+    @State private var moveUpward: Bool = false
+    
     
     var card: Card
     
@@ -17,6 +21,7 @@ struct CardView: View {
     var body: some View {
         ZStack {
             Image(card.imageName)
+                .opacity(fadeIn ? 1.0 : 0.0)
             
             VStack {
                 Text(card.title)
@@ -29,7 +34,7 @@ struct CardView: View {
                     .foregroundColor(Color.white)
                     .italic()
             }
-            .offset(y: -240)
+            .offset(y: moveDownward ? -220 : -300)
             
             Button(action: {
                 print("Click")
@@ -54,12 +59,21 @@ struct CardView: View {
                 .shadow(color: Color("ColorShape"), radius: 6, x: 0, y: 3)
                 
             }
-            .offset(y: 180)
+            .offset(y: moveUpward ? 180 : 300)
         }
         .frame(width: 335, height: 545)
         .background(LinearGradient(gradient: Gradient(colors: card.gradientColors), startPoint: .top, endPoint: .bottom))
         .cornerRadius(16)
         .shadow(radius: 8)
+        .onAppear() {
+            withAnimation(.linear(duration: 1.4)) {
+                self.fadeIn.toggle()
+            }
+            withAnimation(.linear(duration: 0.9)) {
+                self.moveDownward.toggle()
+                self.moveUpward.toggle()
+            }
+        }//onAppear
     }
 }
 
