@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60651C37275279D700BF260D /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60651C36275279D700BF260D /* CardModel.swift */; };
+		60651C3927527A9D00BF260D /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60651C3827527A9D00BF260D /* CardData.swift */; };
 		606786EB2750316500081E1B /* Learn_By_DoingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606786EA2750316500081E1B /* Learn_By_DoingApp.swift */; };
 		606786ED2750316500081E1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606786EC2750316500081E1B /* ContentView.swift */; };
 		606786EF2750316600081E1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606786EE2750316600081E1B /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60651C36275279D700BF260D /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		60651C3827527A9D00BF260D /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 		606786E72750316500081E1B /* Learn By Doing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn By Doing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		606786EA2750316500081E1B /* Learn_By_DoingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn_By_DoingApp.swift; sourceTree = "<group>"; };
 		606786EC2750316500081E1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				606786FA2750370900081E1B /* Learn-By-Doing-Info.plist */,
 				606786EA2750316500081E1B /* Learn_By_DoingApp.swift */,
 				606786EC2750316500081E1B /* ContentView.swift */,
+				60651C36275279D700BF260D /* CardModel.swift */,
+				60651C3827527A9D00BF260D /* CardData.swift */,
 				606786EE2750316600081E1B /* Assets.xcassets */,
 				606786F02750316700081E1B /* Preview Content */,
 				606786F8275034D900081E1B /* LaunchScreen.storyboard */,
@@ -146,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60651C3927527A9D00BF260D /* CardData.swift in Sources */,
 				606786ED2750316500081E1B /* ContentView.swift in Sources */,
+				60651C37275279D700BF260D /* CardModel.swift in Sources */,
 				606786FC2750388400081E1B /* CardView.swift in Sources */,
 				606786EB2750316500081E1B /* Learn_By_DoingApp.swift in Sources */,
 			);
